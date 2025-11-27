@@ -1,0 +1,5 @@
+How to run the file:
+
+Go to html folder and click the index.html. It will open the web application in any default browser. 
+
+Please use latest version of chrome, firefox or any other browser for best result.

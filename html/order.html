@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link
+    rel="shortcut icon"
+    href="../images/title-logo.png"
+    type="image/x-icon"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <style>
+      .order {
+        margin-top: 3em;
+      }
+      .footer {
+        margin-top: 5em;
+      }
+    </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <a href="index.html"> <img src="../images/title-logo.png" alt="logo" /> </a>
+    </div>
+    <div class="kings">
+      <a href="index.html"> <h1> King's Food </h1> </a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li>
+          <a href="about.html" >about</a>         
+        </li>
+        <li>
+          <a href="menu.html">menu</a>
+        </li>
+        <li>
+          <a href="popular.html" >popular</a>
+        </li>
+        <li>
+          <a href="gallery.html" >gallery</a>
+        </li>
+        <li>
+          <a class="active" href="order.html" >order</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="menu-bar" class="fas fa-bars"></div>
+  </header>
+    <section id="order" class="order">
+        <h2>make an <span>order</span></h2>
+        <div class="order-content">
+          <form action="#" class="order-form" autocomplete="off">
+            <input type="text" placeholder="name" required />
+            <input type="email" placeholder="email" />
+            <input type="number" placeholder="phone Number" required />
+            <input type="text" placeholder="order items" required />
+            <textarea cols="30" rows="8" placeholder="address"></textarea>
+            <button type="submit" onclick = "placed();"> Order now </button>
+          </form>
+          <img src="../images/form-img.jpg" alt="Net Error" />
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="copyright">
+          <p>Copyright 2022 || &copy all right reserved</p>
+          <p>project by: Rahul Kushwaha (1340437)</p>
+        </div>
+      </footer>
+      <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popular</title>
+    <link
+    rel="shortcut icon"
+    href="../images/title-logo.png"
+    type="image/x-icon"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <style>
+      .popular .popular-content {
+        margin-top: -5em;
+      }
+      .popular .popular-content .p-card {
+       height: 70%;
+       margin-bottom: 5rem;
+      }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <a href="index.html"> <img src="../images/title-logo.png" alt="logo" /> </a>
+    </div>
+    <div class="kings">
+      <a href="index.html"> <h1> King's Food </h1> </a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li>
+          <a href="about.html">about</a>         
+        </li>
+        <li>
+          <a href="menu.html" >menu</a>
+        </li>
+        <li>
+          <a class="active" href="popular.html" >popular</a>
+        </li>
+        <li>
+          <a href="gallery.html" >gallery</a>
+        </li>
+        <li>
+          <a href="order.html">order</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="menu-bar" class="fas fa-bars"></div>
+  </header>
+
+  <section id="popular" class="popular">
+    <h2>most <span>popular</span> foods</h2>
+    <div class="popular-content">
+      <div class="p-card">
+        <img src="../images/product-1.jpg" alt="Net Error"/>
+        <h4>chicken fry</h4>
+        <div class="review">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="price">₹ 200</p>
+        <input type="button" value="add to cart" onclick = "added();"/>
+      </div>
+      <div class="p-card">
+        <img src="../images/product-2.jpg" alt="Net Error" />
+        <h4>Mojito Cocktail</h4>
+        <div class="review">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="price">₹ 300</p>
+        <input type="button" value="add to cart" onclick = "added();"/>
+      </div>
+      <div class="p-card">
+        <img src="../images/product-3.jpg" alt="Net Error" />
+        <h4>paneer tikka wrap</h4>
+        <div class="review">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="price">₹ 250</p>
+        <input type="button" value="add to cart" onclick = "added();"/>
+      </div>
+      <div class="p-card">
+        <img src="../images/product-4.jpg" alt="Net Error" />
+        <h4>Manchow Noodles</h4>
+        <div class="review">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="price">₹ 150</p>
+        <input type="button" value="add to cart" onclick = "added();"/>
+      </div>
+      <div class="p-card">
+        <img src="../images/menu-breakfast.jpg" alt="Net Error" />
+        <h4>Bread Omlette</h4>
+        <div class="review">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="price">₹ 100</p>
+        <input type="button" value="add to cart" onclick = "added();"/>
+      </div>
+      <div class="p-card">
+        <img src="../images/menu-lunch.jpg" alt="Net Error" />
+        <h4>sandwitch</h4>
+        <div class="review">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="price">₹ 200</p>
+        <input type="button" value="add to cart" onclick = "added();"/>
+      </div>
+    </div>
+  </section>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>king's Food</title>
+    <link
+      rel="shortcut icon"
+      href="images/title-logo.png"
+      type="image/x-icon"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQ
+      joXtEKNosOWaZqXgel0g=="crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <style>
+      .menu .catagory-img {
+        margin-left: 32em;
+        width: 140%
+      } </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <a href="#home"> <img src="images/title-logo.png" alt="logo" /> </a>
+      </div>
+      <div class="kings">
+        <a href="#home"> <h1> King's Food </h1> </a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="#home">home</a></li>
+          <li><a href="html/about.html">about</a> </li>
+          <li><a href="html/menu.html">menu</a></li>
+          <li><a href="html/popular.html">popular</a></li>
+          <li><a href="html/gallery.html">gallery</a></li>
+          <li><a href="html/order.html">order</a></li>
+        </ul>
+      </nav>
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+    <main>
+      <section id="home" class="home">
+        <div class="home-desc">
+          <h1>good food always gives great happiness</h1>
+          <p>
+            Food is symbolic of love when words are inadequate.
+            Food brings people together on many different levels. It’s 
+            nourishment of the soul and body; it’s truly love! 
+          </p>
+          <a href="#menu"><input type="button" value="get started" /></a>
+        </div>
+        <div class="home-image">
+          <img src="images/home-img.png" alt="Net Error" />
+        </div>
+      </section>
+        <section id="about" class="about">
+        <div class="about-image">
+          <img src="images/about-frame-img.png" alt="" />
+        </div>
+        <div class="about-desc">
+          <h2>a word about us</h2>
+          <p>
+            This resturant was established way early. During a stopover in Hong Kong in 1963, the twenty-something graduate was enjoying a quiet cup of coffee when inspiration struck and the founder decided to open a little Cafe in Allahabad.
+          </p>
+          <p>
+            This resturant has proudly partnered with the growth of this city and the several 
+            institutions that have come to its shores.
+          </p>
+          <a href="html/about.html" ><input type="button" value="learn more" /></a>
+        </div>
+      </section>
+      <section id="menu" class="menu">
+        <h2>our delicious <span>menu</span></h2>
+        <div class="catagory">
+          <input type="button" value="breakfast" />
+          <input type="button" class="active" value="lunch" />
+          <input type="button" value="dinner" />
+          <input type="button" value="desert" />
+        </div>
+        <div class="catagory-img">
+          <img id="c-img" src="images/menu-lunch.jpg" alt="Net Error" />
+        </div>
+        <div class="bottom-button-1">
+          <a href="html/menu.html" ><button class="button button1">Learn More</button></a>
+        </div>
+      </section>
+      <section id="popular" class="popular">
+        <h2>most <span>popular</span> foods</h2>
+        <div class="popular-content">
+          <div class="p-card">
+            <img src="images/product-1.jpg" alt="Net Error" />
+            <h4>chicken fry</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">₹ 200</p>
+            <input type="button" value="add to cart" onclick = "added();"/>
+          </div>
+          <div class="p-card">
+            <img src="images/product-2.jpg" alt="Net Error" />
+            <h4>Mojito Cocktail</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">₹ 300</p>
+            <input type="button" value="add to cart" onclick = "added();"/>
+          </div>
+        </div>
+        <div class="bottom-button-2">
+          <a href="html/popular.html" ><button class="button button1">Learn More</button></a>
+        </div>
+      </section>
+      <section id="gallery" class="gallery">
+        <h2>our food <span>gallery</span></h2>
+        <div class="gallery-content">
+          <div class="g-card">
+            <img src="images/img1.jpg" alt="Net Error" />
+            <h3>Indian sweets</h3>
+          </div>
+          <div class="g-card">
+            <img src="images/img2.jpg" alt="Net Error" />
+            <h3>chicken tikka</h3>
+          </div>
+          <div class="g-card">
+            <img src="images/img3.jpg" alt="Net Error" />
+            <h3>bread & omlette</h3>
+          </div>
+        </div>
+        <div class="bottom-button-3">
+          <a href="html/gallery.html" ><button class="button button1">Learn More</button></a>
+        </div>
+      </section>
+      <section id="order" class="order">
+        <h2>make an <span>order</span></h2>
+        <div class="order-content">
+          <form action="#" class="order-form" autocomplete="off">
+            <input type="text" placeholder="name" required />
+            <input type="email" placeholder="email" />
+            <input type="number" placeholder="phone Number" required />
+            <input type="text" placeholder="order items" required />
+            <textarea cols="30" rows="8" placeholder="address"></textarea>
+            <button type="submit" onclick = "placed();">Order now</button>
+          </form>
+          <img src="images/form-img.jpg" alt="Net Error" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="contact-info">
+        <h4>contact info</h4>
+        <p>
+          <i class="fas fa-location-dot"></i
+          ><span>civil lines, prayagraj</span>
+        </p>
+        <p><i class="fas fa-heart"></i> <span>www.kingsfood.com</span></p>
+        <p><i class="fas fa-envelope"></i> <span>kingsfood@gmail.com</span></p>
+        <p><i class="fas fa-phone"></i> <span>+91 9887776655</span></p>
+        <p><i class="fas fa-phone"></i> <span>+5332-454676</span></p>
+      </div>
+      <div class="location">
+        <h4>branch location</h4>
+        <ul>
+          <li><a >prayagraj</a></li>
+          <li><a >Lucknow</a></li>
+          <li><a >Noida</a></li>
+          <li><a >New Delhi</a></li>
+        </ul>
+      </div>
+      <div class="quick-links">
+        <h4>quick links</h4>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="menu.html">menu</a></li>
+          <li><a href="popular.html">popular</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="order.html">order</a></li>
+        </ul>
+      </div>
+      <div class="follow-us">
+        <h4>follow us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com" target="blank">facebook</a></li>
+          <li><a href="https://www.instagram.com" target="blank">instagram</a></li>
+          <li><a href="https://www.twitter.com" target="blank">twitter</a></li>
+          <li> <a href="https://www.linkedin.com" target="blank">linkedin</a></li>
+          <li><a href="https://www.youtube.com" target="blank">youtube</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2022 || &copy all right reserved</p>
+        <p>project by: Rahul Kushwaha (1340437)</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
